@@ -6,7 +6,7 @@ import Button from "./Button";
 const NewTransaction = () => {
   return (
     <div className="flex gap-1 items-center">
-    <div className="flex flex-col rounded-lg shadow-lg w-[342.51px] h-[180px] p-4">
+    <div className="flex flex-col rounded-lg shadow-lg w-[360.51px] h-[180px] p-4">
       <div className="text-Suprema font-semibold md:text-[20px] text-[18px] leading-6 text-[#404040] mb-4">
         New Transaction
       </div>

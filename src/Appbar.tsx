@@ -119,7 +119,7 @@ const Appbar = ({ children }: any) => {
         </div>
       </aside>
 
-      <div className="flex-1">{children}</div>
+      <div>{children}</div>
     </div>
   );
 };

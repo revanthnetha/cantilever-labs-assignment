@@ -4,7 +4,7 @@ import { ButtonInput } from '../types/types'
 const Button = ({icon,name}:ButtonInput) => {
   return (
     <div>
-         <button className="w-[160px] h-[36px] bg-[#FFC145] rounded-[14px] flex gap-1  justify-center items-center">
+         <button className="w-[150px] h-[36px] bg-[#FFC145] rounded-[14px] flex gap-1  justify-center items-center">
           <text className="font-sans font-semibold text-[12px]  ">
             {name}
           </text>

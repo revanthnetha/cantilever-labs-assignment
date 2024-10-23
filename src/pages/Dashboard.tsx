@@ -14,7 +14,17 @@ const Dashboard = () => {
     {/* <TransactionHistory/> */}
     {/* <OutComeStatics/> */}
     {/* <NewTransaction/> */}  
+    <div className='flex-col gap-10 md:flex-row flex'>
+    <div className='flex flex-col gap-2'>
     <Cards/>
+    <TransactionHistory/>
+    </div>
+    <div className='flex flex-col gap-10'>
+    <Goals/>
+    <OutComeStatics/>
+    <NewTransaction/>
+    </div>
+    </div>
     </div>
   )
 }

@@ -1,9 +1,10 @@
+import React from "react";
+import { cartOutcome } from "../assets";
 import { OutcomeStaticsData } from "../data/data";
-import ProgressBar from "./ProgressBar";
 
 const OutComeStatics = () => {
   return (
-    <div>
+    <div className="w-[530px]">
       <div className="text-Suprema font-semibold md:text-[20px] text-[18px] leading-6 text-[#404040] mb-4">
         Outcome Statistics
       </div>
@@ -17,10 +18,18 @@ const OutComeStatics = () => {
                 alt="icon"
               />
             </div>
-            <ProgressBar percentage={item.percentage} progressColor={item.progressColor}/>
+            <div className="w-full bg-[#F1F1F1] rounded-full h-4  relative">
+              <div
+                className="h-full rounded-full transition-all duration-300"
+                style={{
+                  width: item.percentage,
+                  background: item.progressColor,
+                }}
+              />
               <div className="font-Suprema text-[#AEAEAE] font-normal text-[14px] absolute left-10 transform -translate-x-1/2 mt-1">
                 {item.name}
               </div>
+            </div>
             <div className="font-sans font-semibold text-[24px] text-[#696969] ">
               {item.percentage}
             </div>
