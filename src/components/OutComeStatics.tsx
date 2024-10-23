@@ -4,7 +4,7 @@ import { OutcomeStaticsData } from "../data/data";
 
 const OutComeStatics = () => {
   return (
-    <div className="w-[530px]">
+    <div className="sm:w-[530px] w-[320px]">
       <div className="text-Suprema font-semibold md:text-[20px] text-[18px] leading-6 text-[#404040] mb-4">
         Outcome Statistics
       </div>
@@ -30,7 +30,7 @@ const OutComeStatics = () => {
                 {item.name}
               </div>
             </div>
-            <div className="font-sans font-semibold text-[24px] text-[#696969] ">
+            <div className="font-sans font-semibold md:text-[24px] text-[18px] text-[#696969] ">
               {item.percentage}
             </div>
           </div>

@@ -3,7 +3,7 @@ import { cardbg } from "../assets";
 const CreditCard = () => {
   return (
     <div
-      className="w-[320.43px] h-[206.17px] rounded-[26px] p-4 shadow-md"
+      className="sm:w-[320.43px] md:h-[206.17px] w-[240px] h-[180px] rounded-[26px] p-4 shadow-md"
       style={{
         background: "linear-gradient(180deg, #197BBD 0%, #3391D0 100%)",
       }}
@@ -15,7 +15,7 @@ const CreditCard = () => {
         PREMIUM ACCOUNT
       </div>
 
-      <div className="font-Quicksand font-medium text-[21px] text-[#FFFFFF] mb-8">
+      <div className="font-Quicksand font-medium md:text-[21px] text-[14px] text-[#FFFFFF] mb-8">
         5789 &nbsp; &nbsp; * * * * &nbsp; &nbsp; * * * * &nbsp; &nbsp; 2847
       </div>
 

@@ -12,7 +12,7 @@ const Appbar = ({ children }: any) => {
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full h-screen">
       <div className="flex items-center justify-between p-4 ">
         <button
           onClick={toggleSidebar}
@@ -39,16 +39,16 @@ const Appbar = ({ children }: any) => {
         <div className="md:block"></div>
 
         <div className="flex items-center space-x-2">
-          <img src={mail} alt="mail" className="w-[24px] h-[24px] mr-2" />
+          <img src={mail} alt="mail" className="w-[24px] h-[24px] mr-2 hover:cursor-pointer" />
           <img
             src={bell}
             alt="notification"
-            className="w-[24px] h-[24px] mr-2"
+            className="w-[24px] h-[24px] mr-2 hover:cursor-pointer"
           />
           <img
             src={admin}
             alt="admin"
-            className="bg-[#FFC145] w-[24px] h-[24px] rounded-full mr-2"
+            className="bg-[#FFC145] w-[24px] h-[24px] rounded-full mr-2 hover:cursor-pointer"
           />
           <div className="flex flex-col items-start">
             <div className="font-semibold text-[14px] font-suprema text-[#404040]">
@@ -65,7 +65,7 @@ const Appbar = ({ children }: any) => {
         id="logo-sidebar"
         className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 border-r shadow-md`}
+        } md:translate-x-0 border-r shadow-md bg-slate-100 md:bg-white`}
         aria-label="Sidebar"
       >
         <div className="flex flex-col h-full">
