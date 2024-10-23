@@ -3,6 +3,7 @@ import Goals from '../components/Goals'
 import TransactionHistory from '../components/TransactionHistory'
 import OutComeStatics from '../components/OutComeStatics'
 import NewTransaction from '../components/NewTransaction'
+import Cards from '../components/Cards'
 
 const Dashboard = () => {
   return (
@@ -10,7 +11,8 @@ const Dashboard = () => {
     {/* <Goals/> */}
     {/* <TransactionHistory/> */}
     {/* <OutComeStatics/> */}
-    <NewTransaction/>
+    {/* <NewTransaction/> */}  
+    <Cards/>
     </div>
   )
 }

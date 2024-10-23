@@ -20,6 +20,7 @@ import Mike from "./Mike.png"
 import Monica from "./Monica.png"
 import Ann from "./ANN.png"
 import Loan from "./Loan.png"
+import cardbg from "./card-bg.png"
 
 export{
     logo,
@@ -43,5 +44,6 @@ export{
     John,
     Mike,
     Mia,
-    Loan
+    Loan,
+    cardbg
 }

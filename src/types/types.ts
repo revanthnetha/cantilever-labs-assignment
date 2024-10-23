@@ -4,3 +4,7 @@ export interface GoalsInputData{
     img: string;
     name: string;
 }
+export interface ProgressBarInputs{
+    percentage:string,
+    progressColor:string
+}
