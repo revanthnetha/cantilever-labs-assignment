@@ -4,7 +4,14 @@ import {
     goals,
     settings,
     invoice,
-    card
+    card,
+    Renovation,
+    xbox,
+    Holidays,
+    cart,
+    person,
+    Restaurant
+
   } from "../assets";
 
 export const menuItems = [
@@ -40,3 +47,61 @@ export const menuItems = [
     },
 ];
 
+export const GoalsCardData = [
+    {
+       value:"$550",
+       date:"12/20/20",
+       img: Holidays,
+       name:"Holidays"
+    },
+    {
+        value:"$200",
+        date:"12/20/20",
+        img:Renovation,
+        name:"Renovation"
+     },
+     {
+        value:"$820",
+        date:"12/20/20",
+        img:xbox,
+        name:"Xbox"
+     }
+]
+
+export const TransactioHistoryData=[
+    {
+        receiver: "Tesco Market",
+        type: "Shopping",
+        date: "13 Dec 2020",
+        amount: "$75.67",
+        img:cart
+    },
+    {
+        receiver: "ElectroMen Market",
+        type: "Shopping",
+        date: "14 Dec 2020",
+        amount: "$250.00",
+        img:cart
+    },
+    {
+        receiver: "Fiorgio Restaurant",
+        type: "Food",
+        date: "07 Dec 2020",
+        amount: "$19.50",
+        img:Restaurant
+    },
+    {
+        receiver: "John Mathew Kayne",
+        type: "Sport",
+        date: "06 Dec 2020",
+        amount: "$350",
+        img:person
+    },
+    {
+        receiver: "Ann Marlin",
+        type: "Shopping",
+        date: "31 Nov 2020",
+        amount: "$430",
+        img:person
+    },
+]

@@ -2,7 +2,7 @@ import React from "react";
 import { logo } from "../assets";
 import { menuItems } from "../data/data";
 
-const Appbar = () => {
+const Appbar = ({children}:any) => {
   return (
     <div>
       <button
@@ -64,8 +64,7 @@ const Appbar = () => {
           </ul>
         </div>
       </aside>
-
-      {/*  */}
+      {children}
     </div>
   );
 };

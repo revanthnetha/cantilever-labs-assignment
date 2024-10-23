@@ -5,6 +5,13 @@ import invoice from "./invoice.png"
 import overview from "./overview.png"
 import settings from "./settings.png"
 import card from "./card-menu.png"
+import Holidays from "./Holidays.png"
+import xbox from "./xbox.png"
+import Renovation from "./Renovation.png"
+import plus from "./plus.png"
+import Restaurant from "./Restaurant.png"
+import person from "./person.png"
+import cart from "./Cart.png"
 
 export{
     logo,
@@ -13,5 +20,12 @@ export{
     invoice,
     overview,
     settings,
-    card
+    card,
+    Holidays,
+    xbox,
+    Renovation,
+    plus,
+    cart,
+    person,
+    Restaurant
 }
