@@ -1,15 +1,32 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { logo, premium, premiumicon, mail, admin, bell } from "./assets";
 import { menuItems } from "./data/data";
 import Button from "./components/Button";
 
 const Appbar = ({ children }: any) => {
   const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
 
   const toggleSidebar = () => {
     console.log(isOpen);
     setIsOpen((prev) => !prev);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="flex flex-col w-full h-screen">
@@ -67,17 +84,22 @@ const Appbar = ({ children }: any) => {
 
       <aside
         id="logo-sidebar"
+        ref={sidebarRef}
         className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 border-r shadow-md bg-slate-100 md:bg-white`}
+        } md:translate-x-0 border-r shadow-md bg-slate-100 md:bg-white overflow-y-auto`}
         aria-label="Sidebar"
       >
-        <div className="flex flex-col h-full">
-          <div className="h-full px-3 py-4 overflow-y-auto flex flex-col justify-between">
+        <div className="flex flex-col h-screen">
+          <div
+            className={`h-full px-3 py-4 overflow-y-auto flex flex-col justify-between ${
+              isOpen ? "mt-[28px]" : ""
+            }`}
+          >
             <div>
               <a
                 href="#"
-                className="flex flex-row items-center justify-center gap-2 mb-10 mt-5"
+                className="flex flex-row items-center ml-2 gap-2 mb-10 mt-5"
               >
                 <img
                   src={logo}
@@ -93,15 +115,18 @@ const Appbar = ({ children }: any) => {
                 {menuItems.map((item, index) => (
                   <li
                     key={index}
-                    className="p-2 flex hover:bg-[#F0F7FF] rounded-md hover:text-[#197BBD]"
+                    className="p-2 flex hover:bg-[#F0F7FF] rounded-md hover:text-[#197BBD] group hover:cursor-pointer"
                   >
-                    <a href={item.link} className="flex items-center p-2 gap-4">
+                    <a
+                      href={item.link}
+                      className="flex items-center p-2 gap-4 hover:text-[#197BBD]"
+                    >
                       <img
                         src={item.imgUrl}
-                        className="h-[12.43px] w-[18.14px]"
+                        className="h-[12.43px] w-[18.14px] group-hover:filter group-hover:brightness-0 group-hover:invert"
                         alt={item.name}
                       />
-                      <span className="font-sans font-bold md:text-[16px] text-[12px] text-[#C7C7C7] hover:text-[#197BBD] text-left">
+                      <span className="font-sans font-bold md:text-[16px] text-[12px] text-[#C7C7C7]  group-hover:text-[#197BBD] text-left">
                         {item.name}
                       </span>
                     </a>
