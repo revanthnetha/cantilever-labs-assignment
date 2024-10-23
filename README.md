@@ -1,4 +1,4 @@
-#   Financial Dashboard --  Canilever labs Assignment
+#   Financial Dashboard --  Cantilever labs Assignment
 - Designed the Dashboard according to the figma design containing the info about:
 -  Cards
 -  Transaction History
