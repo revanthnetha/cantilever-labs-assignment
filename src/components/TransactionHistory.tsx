@@ -1,4 +1,3 @@
-import React from "react";
 import { TransactioHistoryData } from "../data/data";
 
 const TransactionHistory = () => {

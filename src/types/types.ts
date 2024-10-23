@@ -8,3 +8,8 @@ export interface ProgressBarInputs{
     percentage:string,
     progressColor:string
 }
+
+export interface ButtonInput{
+    icon:string,
+    name:string
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import { GoalsInputData } from "../types/types";
 
 const GoalsCard = ({value, name, date, img}:GoalsInputData) => {

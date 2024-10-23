@@ -1,4 +1,3 @@
-import React from 'react'
 import GoalsCard from './GoalsCard'
 import { GoalsCardData } from '../data/data'
 import { plus } from '../assets'

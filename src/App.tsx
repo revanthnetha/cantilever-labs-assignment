@@ -1,16 +1,16 @@
 import './App.css'
-import Appbar from './pages/Appbar'
 import 'typeface-lato';
 import Dashboard from './pages/Dashboard';
+import Layout from './Layout';
 
 function App() {
  
 
   return (
     <>
-    <Appbar >
-      <Dashboard/>
-    </Appbar>
+    <Layout>
+      {/* <Dashboard/> */}
+    </Layout>
      </>
   )
 }

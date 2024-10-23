@@ -1,7 +1,7 @@
-import React from "react";
 import { plus } from "../assets";
 import { NewTransactionData } from "../data/data";
 import { Loan } from "../assets";
+import Button from "./Button";
 
 const NewTransaction = () => {
   return (
@@ -38,12 +38,7 @@ const NewTransaction = () => {
         <span className="relative inset-y-0 right-8  flex items-center pointer-events-none text-[#C7C7C7] ">
           $
         </span>
-        <button className="w-[150px] h-[36px] bg-[#FFC145] rounded-[14px] flex gap-2 justify-center items-center">
-          <text className="font-sans font-semibold text-[12px] w-[95px] ">
-            Send the transfer
-          </text>
-          <img src={plus} alt="to-icon" />
-        </button>
+        <Button name={"Send the transfer"} icon={plus}/>
       </div>
     </div>
     <div className="flex items-center justify-center flex-col ">

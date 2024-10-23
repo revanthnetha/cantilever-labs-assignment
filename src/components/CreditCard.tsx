@@ -1,4 +1,3 @@
-import React from "react";
 import { cardbg } from "../assets";
 
 const CreditCard = () => {

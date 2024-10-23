@@ -1,4 +1,3 @@
-import React from "react";
 import { ProgressBarInputs } from "../types/types";
 
 const ProgressBar = ({ percentage, progressColor }: ProgressBarInputs) => {

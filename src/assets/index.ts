@@ -21,6 +21,11 @@ import Monica from "./Monica.png"
 import Ann from "./ANN.png"
 import Loan from "./Loan.png"
 import cardbg from "./card-bg.png"
+import premium from "./premium.png"
+import premiumicon from "./premiumicon.png"
+import mail from "./mail.png"
+import bell from "./bell.png"
+import admin from "./admin.png"
 
 export{
     logo,
@@ -45,5 +50,10 @@ export{
     Mike,
     Mia,
     Loan,
-    cardbg
+    cardbg,
+    premium,
+    premiumicon,
+    mail,
+    admin,
+    bell
 }
