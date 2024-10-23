@@ -1,18 +1,16 @@
-import './App.css'
-import 'typeface-lato';
-import Dashboard from './pages/Dashboard';
-import Layout from './Layout';
+import "./App.css";
+import "typeface-lato";
+import Dashboard from "./pages/Dashboard";
+import Layout from "./Layout";
 
 function App() {
- 
-
   return (
     <>
-    <Layout>
-      <Dashboard/>
-    </Layout>
-     </>
-  )
+      <Layout>
+        <Dashboard />
+      </Layout>
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { logo, premium, premiumicon, mail, admin, bell } from "./assets";
 import { menuItems } from "./data/data";
 import Button from "./components/Button";
@@ -39,7 +39,11 @@ const Appbar = ({ children }: any) => {
         <div className="md:block"></div>
 
         <div className="flex items-center space-x-2">
-          <img src={mail} alt="mail" className="w-[24px] h-[24px] mr-2 hover:cursor-pointer" />
+          <img
+            src={mail}
+            alt="mail"
+            className="w-[24px] h-[24px] mr-2 hover:cursor-pointer"
+          />
           <img
             src={bell}
             alt="notification"

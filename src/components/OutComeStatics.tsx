@@ -1,5 +1,3 @@
-import React from "react";
-import { cartOutcome } from "../assets";
 import { OutcomeStaticsData } from "../data/data";
 
 const OutComeStatics = () => {

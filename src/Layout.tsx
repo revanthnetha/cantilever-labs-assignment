@@ -1,14 +1,11 @@
-import React from 'react'
-import Appbar from './Appbar'
+import Appbar from "./Appbar";
 
-const Layout = ({children}:any) => {
+const Layout = ({ children }: any) => {
   return (
     <div>
-    <Appbar >
-      {children}
-    </Appbar>
+      <Appbar>{children}</Appbar>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
