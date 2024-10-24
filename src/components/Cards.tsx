@@ -1,6 +1,6 @@
-import CreditCard from "./CreditCard";
 import ToggleButton from "./ToggleButton";
 import ProgressBar from "./ProgressBar";
+import CardCarousel from "./CardCarousel";
 
 const Cards = () => {
   const percentage = (350.6 / 4000) * 100;
@@ -17,9 +17,7 @@ const Cards = () => {
 
       <div className="flex justify-between">
         <div>
-          <div className="mb-6 border-r p-4 md:pr-10 pr-4 h-[70%]">
-            <CreditCard />
-          </div>
+          <CardCarousel />
           <div>
             <ProgressBar
               percentage={percentage.toString() + "%"}

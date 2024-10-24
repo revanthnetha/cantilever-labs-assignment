@@ -26,6 +26,7 @@ import premiumicon from "./premiumicon.png"
 import mail from "./mail.png"
 import bell from "./bell.png"
 import admin from "./admin.png"
+import right from "./right.png"
 
 export{
     logo,
@@ -55,5 +56,6 @@ export{
     premiumicon,
     mail,
     admin,
-    bell
+    bell,
+    right
 }
